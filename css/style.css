@@ -279,9 +279,19 @@ img {
     align-self: center;
 }
 
-.hero h3 {
+.hero h1 {
+    font-size: 6rem;
+    overflow-wrap: break-word;
+    letter-spacing: 0px;
+}
+
+.hero p {
     margin-top: 1rem;
     font-size: 2rem;
+    color: var(--dark-text-color);
+    line-height: 2.4rem;
+    margin: 2rem 0 3rem 0;
+    font-weight: 600;
 }
 
 .hero .btn-group a {
@@ -291,8 +301,9 @@ img {
 }
 
 .hero .btn {
-    font-size: 1.8rem;
-    pad: 2rem 3rem;
+    font-size: 1.6rem;
+    pad: 1rem 2rem;
+    border-radius: 20px;
 }
 
 .hero .flex {
