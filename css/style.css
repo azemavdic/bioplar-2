@@ -353,6 +353,23 @@ img {
 }
 
 /**********************/
+/* SHIPPING */
+/**********************/
+
+.shipping {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%) translateY(50%);
+    z-index: 999;
+}
+
+.shipping-text {
+    width: 100%;
+    text-align: left;
+}
+
+/**********************/
 /* ABOUT */
 /**********************/
 
@@ -405,7 +422,7 @@ section.about::before {
 }
 
 .about-text-box {
-    margin-top: 6rem;
+    margin-top: 20rem;
     background-color: #7ec4ff;
     border-radius: 5px;
 }
