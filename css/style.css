@@ -91,7 +91,7 @@ h1 {
 
 h2 {
     font-size: 3.2rem;
-    color: var(--header-text-color);
+    color: var(--dark-text-color);
     font-weight: 600;
     line-height: 5.6rem;
     margin-bottom: 3rem;
@@ -115,7 +115,7 @@ h5 {
     font-size: 2rem;
     color: var(--header-text-color);
     font-weight: 600;
-    margin: 3rem 0;
+    margin: 1rem 0;
 }
 
 p {
@@ -455,6 +455,59 @@ section.shipping::before {
     color: var(--dark-text-color);
     text-transform: uppercase;
     margin-bottom: 1rem;
+}
+
+/**********************/
+/* SIMPTOMI */
+/**********************/
+.simptomi {
+    position: relative;
+    margin: 10rem auto;
+    background: var(--navbar-bg-color);
+    padding: 5rem 5rem;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(
+        420deg,
+        rgba(255, 255, 255, 1) 0%,
+        rgba(159, 201, 237, 1) 100%
+    );
+}
+
+.title-secondary {
+    margin-bottom: 10rem;
+    text-transform: capitalize;
+}
+
+.title-secondary::after {
+    content: '';
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 0.4rem;
+    width: 8rem;
+    border-radius: 2rem;
+    background: var(--header-text-color);
+}
+
+.simptomi-center {
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+
+.simptomi-box {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.simptomi-icon {
+    margin-right: 3rem;
+}
+
+.simptomi-features-title {
+    line-height: 2rem;
+    margin: 3rem auto;
 }
 
 /**********************/
