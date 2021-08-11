@@ -305,7 +305,7 @@ img {
     width: 0.6rem;
     height: 15rem;
     background-color: #0F7EBF;
-    z-index: 9999;
+    z-index: 1;
     border-radius: 10px;
 }
 
@@ -1159,6 +1159,11 @@ section.shipping::before {
         animation: bottom-to-center 1s;
     }
 
+    .hero-text::before{
+        left: 18%;
+        top: 15%;
+    }
+
     .hero .container {
         width: 100%;
         padding: 0;
@@ -1230,6 +1235,23 @@ section.shipping::before {
 
     .shipping-text p {
         font-size: 1.8rem;
+    }
+
+
+    /**********************/
+    /* SIMPTOMI */
+    /* <768 PX */
+    /**********************/
+
+
+    /**********************/
+    /* COUNTER */
+    /* <768 PX */
+    /**********************/
+
+
+    .counter-img{
+        display: none;
     }
 
     /**********************/
@@ -2016,6 +2038,11 @@ section.shipping::before {
         line-height: 5rem;
     }
 
+    .hero-text::before{
+        left: 6%;
+        top: 18%;
+    }
+
     .hero-text p {
         padding: 0 5rem;
     }
@@ -2319,6 +2346,12 @@ section.shipping::before {
 /*//////////////*/
 
 @media (max-width: 375px) {
+
+    .hero-text::before{
+        left: 4%;
+        top: 18%;
+    }
+
     .form-title {
         padding: 3.2rem;
     }
