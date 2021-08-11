@@ -1099,6 +1099,15 @@ section.shipping::before {
         grid-template-columns: 1fr;
     }
 
+    h2 {
+        font-size: 3.6rem;
+    }
+
+    h5 {
+        font-size: 2.4rem;
+    }
+
+
     /**********************/
     /* NAVIGATION */
     /* <768 PX */
@@ -1161,7 +1170,8 @@ section.shipping::before {
 
     .hero-text::before{
         left: 18%;
-        top: 15%;
+        top: 17%;
+        height: 8rem;
     }
 
     .hero .container {
@@ -1179,7 +1189,7 @@ section.shipping::before {
 
     .hero p {
         padding: 0 2rem;
-        font-size: 1.8rem;
+        font-size: 2.2rem;
         letter-spacing: 0.8px;
         line-height: 2.5rem;
     }
@@ -1243,15 +1253,31 @@ section.shipping::before {
     /* <768 PX */
     /**********************/
 
+    .simptomi-features-content {
+        font-size: 1.8rem;
+        line-height: 3rem;
+    }
+
+    .simptomi-icon img{
+        width: auto !important;
+    }
 
     /**********************/
     /* COUNTER */
     /* <768 PX */
     /**********************/
 
+    .counter{
+        padding-top: 16rem;
+    padding-bottom: 13rem;
+    }
 
     .counter-img{
         display: none;
+    }
+
+    .counter-number-box.flex{
+        margin-bottom: 4rem;
     }
 
     /**********************/
@@ -1968,7 +1994,7 @@ section.shipping::before {
 
 @media (max-width: 426px) {
     h2 {
-        font-size: 3.8rem;
+        font-size: 4.4rem;
         padding: 0;
     }
 
@@ -2039,8 +2065,9 @@ section.shipping::before {
     }
 
     .hero-text::before{
-        left: 6%;
-        top: 18%;
+        left: 8%;
+        top: 20%;
+        height: 10rem;
     }
 
     .hero-text p {
@@ -2085,9 +2112,22 @@ section.shipping::before {
     .shipping-text h5 {
         font-size: 3.4rem;
         margin-bottom: 4rem;
+        letter-spacing: 0.6px;
     }
     .shipping-text p {
         font-size: 2.8rem;
+        font-weight: 500;
+    }
+
+
+    /**********************/
+    /* SIMPTOMI */
+    /* < 426 PX*/
+    /**********************/
+
+    .simptomi-features-content{
+        font-size: 2.2rem;
+        letter-spacing: 0.03rem;
     }
 
     /**********************/
