@@ -106,24 +106,24 @@ for (i = 0; i < navbarItem.length; i++) {
 
 // COUNTER INCREMENT
 
-const counters = document.querySelectorAll('.counter-num');
+// const counters = document.querySelectorAll('.counter-num');
 
-counters.forEach((counter) => {
-    counter.innerText = '0';
+// counters.forEach((counter) => {
+//     counter.innerText = '0';
 
-    const updateCounter = () => {
-        const target = +counter.getAttribute('data-target');
-        const c = +counter.innerText;
+//     const updateCounter = () => {
+//         const target = +counter.getAttribute('data-target');
+//         const c = +counter.innerText;
 
-        const increment = target / 200;
+//         const increment = target / 200;
 
-        if (c < target) {
-            counter.innerText = `${Math.ceil(c + increment)}`;
-            setTimeout(updateCounter, 25);
-        } else {
-            counter.innerText = target;
-        }
-    };
+//         if (c < target) {
+//             counter.innerText = `${Math.ceil(c + increment)}`;
+//             setTimeout(updateCounter, 25);
+//         } else {
+//             counter.innerText = target;
+//         }
+//     };
 
-    updateCounter();
-});
+//     updateCounter();
+// });
