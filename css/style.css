@@ -2392,6 +2392,10 @@ section.shipping::before {
         top: 18%;
     }
 
+    .simptomi-features-title{
+        line-height: 3.8rem;
+    }
+
     .form-title {
         padding: 3.2rem;
     }
