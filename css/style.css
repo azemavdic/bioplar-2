@@ -831,10 +831,6 @@ section.shipping::before {
 /* FAQ */
 /**********************/
 
-.faq h2 {
-  padding: 2.5rem 0;
-}
-
 .faq .flex {
   justify-content: space-between;
   align-items: center;
@@ -1402,44 +1398,14 @@ section.shipping::before {
     letter-spacing: 0.6px;
   }
 
-  .about-last-part h2,
-  .symptomps h2,
-  .reviews h2,
-  .faq h2,
-  .banner-timer h2 {
-    font-size: 3.3rem;
-  }
-
   /**********************/
-  /* SYMPTOMS */
+  /* DOCTOR */
   /* <768 PX */
   /**********************/
 
-  .symptomps .grid {
-    grid-template-columns: 1fr;
-  }
-
-  .symptomps img {
-    width: auto;
-  }
-
-  .right-arrow {
-    width: 80% !important;
-    margin-top: 0 !important;
-  }
-
-  .symp-items.grid {
-    grid-template-columns: auto 1fr;
-  }
-
-  .symp-list p {
-    padding: 0 2rem;
-  }
-
-  .symp-list a,
-  .banner-timer a {
-    padding: 3rem 5rem;
-    font-size: 1.9rem;
+  .doctor {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
   }
 
   /**********************/
@@ -1485,10 +1451,6 @@ section.shipping::before {
   /* FAQ */
   /* <768 PX */
   /**********************/
-
-  .faq h2 {
-    padding: 3rem;
-  }
 
   .accordion {
     font-size: 2.4rem;
@@ -1710,14 +1672,6 @@ section.shipping::before {
     letter-spacing: 0.6px;
   }
 
-  .about-last-part h2,
-  .symptomps h2,
-  .reviews h2,
-  .faq h2,
-  .banner-timer h2 {
-    font-size: 3.3rem;
-  }
-
   /**********************/
   /* SYMPTOMS */
   /**********************/
@@ -1790,10 +1744,6 @@ section.shipping::before {
   /**********************/
   /* FAQ */
   /**********************/
-
-  .faq h2 {
-    padding: 3rem;
-  }
 
   .accordion {
     font-size: 2.4rem;
@@ -2005,13 +1955,22 @@ section.shipping::before {
 /*//////////////*/
 
 @media (max-width: 426px) {
+  p {
+    font-size: 2.8rem;
+    line-height: 3.8rem;
+  }
+
   h2 {
     font-size: 4.4rem;
     padding: 0;
   }
 
+  h3 {
+    font-size: 3.8rem;
+  }
+
   h4 {
-    font-size: 4rem;
+    font-size: 3rem;
   }
 
   h5 {
@@ -2137,7 +2096,7 @@ section.shipping::before {
   /**********************/
 
   .simptomi-features-content {
-    font-size: 2.2rem;
+    font-size: 2.6rem;
     letter-spacing: 0.03rem;
   }
 
@@ -2214,17 +2173,13 @@ section.shipping::before {
   }
 
   /**********************/
-  /* SYMPTOMS */
+  /* DOCTOR */
   /* < 426 PX */
   /**********************/
 
-  .symptomps img {
-    width: 100%;
-    margin-top: 2rem;
-  }
-
-  .symptomps-img {
-    width: 100% !important;
+  .doctor-left--subtext span {
+    font-size: 2.4rem;
+    line-height: 3rem;
   }
 
   /**********************/
