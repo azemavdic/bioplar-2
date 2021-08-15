@@ -831,6 +831,16 @@ section.shipping::before {
 /* FAQ */
 /**********************/
 
+.faq {
+  padding-block: 3rem;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    160deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(159, 201, 237, 1) 100%
+  );
+}
+
 .faq .flex {
   justify-content: space-between;
   align-items: center;
@@ -846,7 +856,8 @@ section.shipping::before {
 /**********************/
 
 .banner-timer {
-  margin: 8rem 0;
+  margin-top: 10rem;
+  margin-bottom: 10rem;
 }
 
 .banner-bg-image {
