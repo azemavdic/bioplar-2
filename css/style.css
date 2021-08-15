@@ -807,17 +807,56 @@ section.shipping::before {
 
 .reviews {
   padding-block: 10rem;
+  position: relative;
 }
 
-.reviews h3 {
-  padding: 1rem;
+.reviews-bg {
+  background-image: url(/assets/review-bg.jpg);
+  filter: blur(10px);
+  min-height: 70rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.review-item.card {
+  width: 40rem;
+  background: none;
+  border: 1px solid #fff;
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+  background-color: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px) saturate(100%) contrast(45%) brightness(130%);
+  transform: translateY(0);
+  transition: transform 300ms ease-in;
+}
+
+.review-item.card:hover {
+  transform: translateY(-10%);
+}
+
+.reviews .title-secondary {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.reviews h2 {
+  color: var(--white-text-color);
+}
+
+.reviews .container {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .reviews p {
   padding: 2rem 0 1rem 0;
   font-weight: 600;
   font-size: 1.4rem;
-  color: var(--primary-text-color);
+  color: var(--dark-text-color);
   text-align: center;
   line-height: 2rem;
 }
@@ -1024,6 +1063,24 @@ section.shipping::before {
 
   .hero .sub-text p {
     text-align: center;
+  }
+
+  /**********************/
+  /* SIMPTOMI */
+  /* <1024 PX */
+  /**********************/
+
+  .simptomi-center img {
+    width: 100%;
+  }
+
+  /**********************/
+  /* REVIEWS */
+  /* <1024 PX */
+  /**********************/
+
+  .review-item.card {
+    width: 30rem;
   }
 
   /**********************/
@@ -1712,44 +1769,6 @@ section.shipping::before {
   .banner-timer a {
     padding: 3rem 5rem;
     font-size: 1.9rem;
-  }
-
-  /**********************/
-  /* REVIEWS */
-  /**********************/
-
-  .reviews h2 {
-    padding: 0 10rem;
-  }
-
-  .reviews .grid {
-    display: block;
-  }
-
-  .review-item.card {
-    width: 60%;
-    margin: 3rem auto;
-  }
-
-  .review-item img {
-    width: 100%;
-    height: auto;
-  }
-
-  .reviews h3 {
-    font-size: 2rem;
-    padding: 2rem;
-  }
-
-  .checked {
-    font-size: 2.2rem;
-    margin: 0 1rem;
-  }
-
-  .reviews p {
-    font-size: 1.6rem;
-    padding: 2rem;
-    line-height: 2.6rem;
   }
 
   /**********************/

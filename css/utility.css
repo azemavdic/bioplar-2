@@ -1,216 +1,216 @@
 .container {
-    max-width: 101rem;
-    margin: 0 auto;
-    padding: 0 4rem;
-    scroll-behavior: smooth;
-    position: relative;
+  max-width: 101rem;
+  margin: 0 auto;
+  padding: 0 4rem;
+  scroll-behavior: smooth;
+  position: relative;
 }
 
 .flex {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
 
 .grid {
-    display: grid;
-    gap: 2rem;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    justify-content: center;
-    /* height: 100%; */
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+  /* height: 100%; */
 }
 
 .grid-3 {
-    grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr);
 }
 .grid-4 {
-    grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, 1fr);
 }
 
 .btn {
-    display: inline-block;
-    border-radius: 5px;
-    background-color: #fff;
-    color: #fff;
-    padding: 3rem 4.4rem;
-    border: none;
-    cursor: pointer;
-    transition: all 300ms;
-    margin: 2rem 0;
-    font-size: 1.8rem;
-    font-weight: 600;
+  display: inline-block;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #fff;
+  padding: 3rem 4.4rem;
+  border: none;
+  cursor: pointer;
+  transition: all 300ms;
+  margin: 2rem 0;
+  font-size: 1.8rem;
+  font-weight: 600;
 }
 
 .btn-primary {
-    /* background-color: #66e2d4; */
-    background-color: #2b73ae;
+  /* background-color: #66e2d4; */
+  background-color: #2b73ae;
 }
 
 .btn-outline {
-    background-color: transparent;
-    border: 1px solid #fff;
-    /* color: #00306b; */
-    color: #2b73ae;
-    font-weight: 700;
-    transition: all 300ms;
+  background-color: transparent;
+  border: 1px solid #fff;
+  /* color: #00306b; */
+  color: #2b73ae;
+  font-weight: 700;
+  transition: all 300ms;
 }
 
 .btn-primary:hover {
-    background-color: #2b73aec0;
-    transform: scale(0.9);
+  background-color: #2b73aec0;
+  transform: scale(0.9);
 }
 
 .btn-outline:hover {
-    background-color: #fff;
-    /* color: #66e2d4; */
-    color: #2b73ae;
-    /* border: 2px solid #66e2d4; */
-    border: 2px solid #2b73ae;
-    transform: scale(0.9);
+  background-color: #fff;
+  /* color: #66e2d4; */
+  color: #2b73ae;
+  /* border: 2px solid #66e2d4; */
+  border: 2px solid #2b73ae;
+  transform: scale(0.9);
 }
 
 .card {
-    color: #333;
-    border-radius: 5px;
-    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
-    padding: 4rem;
-    background-color: #fff;
-    overflow: hidden;
+  color: #333;
+  border-radius: 5px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+  padding: 4rem;
+  background-color: #fff;
+  overflow: hidden;
 }
 
 .text-center {
-    text-align: center;
+  text-align: center;
 }
 
 /* Text colors */
 .text-primary {
-    color: var(--primary-color);
+  color: var(--primary-color);
 }
 
 .text-secondary {
-    color: var(--secondary-color);
+  color: var(--secondary-color);
 }
 
 .text-dark {
-    color: var(--dark-color);
+  color: var(--dark-color);
 }
 
 .text-light {
-    color: var(--light-color);
+  color: var(--light-color);
 }
 
 /* ALERTS */
 .alert {
-    background-color: var(--light-color);
-    padding: 1rem 2rem;
-    margin: 1.5rem 0;
-    border-radius: 1rem;
-    font-weight: bold;
+  background-color: var(--light-color);
+  padding: 1rem 2rem;
+  margin: 1.5rem 0;
+  border-radius: 1rem;
+  font-weight: bold;
 }
 
 .alert i {
-    margin-right: 1rem;
+  margin-right: 1rem;
 }
 
 .alert-success {
-    background-color: var(--success-color);
-    color: #fff;
+  background-color: var(--success-color);
+  color: #fff;
 }
 
 .alert-error {
-    background-color: var(--error-color);
-    color: #fff;
+  background-color: var(--error-color);
+  color: #fff;
 }
 
 /* MARGINS */
 .my-1 {
-    margin: 1.5rem 0;
+  margin: 1.5rem 0;
 }
 .my-2 {
-    margin: 2.5rem 0;
+  margin: 2.5rem 0;
 }
 .my-3 {
-    margin: 3.5rem 0;
+  margin: 3.5rem 0;
 }
 .my-4 {
-    margin: 4.5rem 0;
+  margin: 4.5rem 0;
 }
 .my-5 {
-    margin: 6.5rem 0;
+  margin: 6.5rem 0;
 }
 
 .m-1 {
-    margin: 1.5rem;
+  margin: 1.5rem;
 }
 .m-2 {
-    margin: 2.5rem;
+  margin: 2.5rem;
 }
 .m-3 {
-    margin: 3.5rem;
+  margin: 3.5rem;
 }
 .m-4 {
-    margin: 4.5rem;
+  margin: 4.5rem;
 }
 .m-5 {
-    margin: 6.5rem;
+  margin: 6.5rem;
 }
 
 /* PADDINGS */
 .py-1 {
-    padding: 1.5rem 0;
+  padding: 1.5rem 0;
 }
 .py-2 {
-    padding: 2.5rem 0;
+  padding: 2.5rem 0;
 }
 .py-3 {
-    padding: 3.5rem 0;
+  padding: 3.5rem 0;
 }
 .py-4 {
-    padding: 4.5rem 0;
+  padding: 4.5rem 0;
 }
 .py-5 {
-    padding: 6.5rem 0;
+  padding: 6.5rem 0;
 }
 
 .p-1 {
-    padding: 1.5rem;
+  padding: 1.5rem;
 }
 .p-2 {
-    padding: 2.5rem;
+  padding: 2.5rem;
 }
 .p-3 {
-    padding: 3.5rem;
+  padding: 3.5rem;
 }
 .p-4 {
-    padding: 4.5rem;
+  padding: 4.5rem;
 }
 .p-5 {
-    padding: 6.5rem;
+  padding: 6.5rem;
 }
 
 .bg-primary {
-    background-color: var(--primary-color);
-    color: #fff;
+  background-color: var(--primary-color);
+  color: #fff;
 }
 
 .bg-secondary,
 .btn-secondary {
-    background-color: var(--secondary-color);
-    color: #fff;
+  background-color: var(--secondary-color);
+  color: #fff;
 }
 
 .bg-dark,
 .btn-dark {
-    background-color: var(--dark-color);
-    color: #fff;
+  background-color: var(--dark-color);
+  color: #fff;
 }
 
 .bg-light,
 .btn-light {
-    background-color: var(--light-color);
-    color: #333;
+  background-color: var(--light-color);
+  color: #333;
 }
 
 .bg-primary a,
@@ -219,90 +219,98 @@
 .btn-secondary a,
 .bg-dark a,
 .btn-dark a {
-    color: #fff;
+  color: #fff;
 }
 
 .lead {
-    font-size: 2rem;
+  font-size: 2rem;
 }
 
 .sm {
-    font-size: 1.6rem;
+  font-size: 1.6rem;
 }
 
 .md {
-    font-size: 3.2rem;
+  font-size: 3.2rem;
 }
 
 .lg {
-    font-size: 4.8rem;
+  font-size: 4.8rem;
 }
 
 .xl {
-    font-size: 6.4rem;
+  font-size: 6.4rem;
 }
 
 .checked {
-    color: #ffc107;
+  color: #ffc107;
 }
 
 .accordion {
-    background-color: #66e2d4;
-    color: #fff;
-    cursor: pointer;
-    padding: 18px;
-    width: 100%;
-    text-align: left;
-    border: none;
-    outline: none;
-    transition: 0.4s;
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
-    border-top-right-radius: 5px;
-    border-top-left-radius: 5px;
-    font-weight: 600;
-    font-size: 2rem;
-    margin-bottom: 3rem;
+  background-color: #66e2d4;
+  color: #fff;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  font-weight: 600;
+  font-size: 2rem;
+  margin-bottom: 3rem;
 }
 
 .accordion i {
-    padding: 0 1rem;
-    font-size: 2rem;
+  padding: 0 1rem;
+  font-size: 2rem;
 }
 
 .active,
 .accordion:hover {
-    background-color: #7cd8d4;
+  background-color: #7cd8d4;
 }
 
 .panel {
-    padding: 0 18px;
-    background-color: white;
-    display: none;
-    overflow: hidden;
-    color: #8e8e8e;
-    margin-bottom: 3rem;
-    margin-top: -3rem;
-    padding: 2rem 4rem;
-    border-top-left-radius: 0;
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 5px;
-    border-bottom-left-radius: 5px;
-    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
-    text-align: left;
-    font-weight: 400;
-    font-size: 1.4rem;
-    line-height: 2.4rem;
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+  color: #8e8e8e;
+  margin-bottom: 3rem;
+  margin-top: -3rem;
+  padding: 2rem 4rem;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
 }
 
 .rotate-icon {
-    transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 
 /* PREKO 1200PX */
 
 @media (min-width: 1200px) {
-    .container {
-        max-width: 135rem;
-    }
+  .container {
+    max-width: 135rem !important;
+  }
+}
+
+/* PREKO 900PX */
+
+@media (min-width: 900px) {
+  .container {
+    max-width: 100rem;
+  }
 }
