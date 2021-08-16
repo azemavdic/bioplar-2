@@ -2106,8 +2106,8 @@ section.shipping::before {
   /**********************/
 
   .review-item img {
-    width: 30rem;
-    height: 30rem;
+    width: auto;
+    height: auto;
   }
 
   .reviews h3 {
@@ -2128,7 +2128,11 @@ section.shipping::before {
   }
 
   .review-item.card {
-    width: 100%;
+    width: 30%;
+  }
+
+  .indicator .active-btn{
+    width: 6rem;
   }
 
   /**********************/
@@ -2283,9 +2287,6 @@ section.shipping::before {
     padding: 3.2rem;
   }
 
-  .review-item.card {
-    width: 100%;
-  }
 }
 
 /*//////////////*/
