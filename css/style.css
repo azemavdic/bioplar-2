@@ -809,8 +809,14 @@ section.shipping::before {
   padding-block: 10rem;
 }
 
-.reviews h3 {
-  padding: 1rem;
+.review-item.card {
+  width: 100%;
+  height: auto;
+  margin-right: 3rem;
+}
+
+.reviews h5 {
+  margin: 2rem auto;
 }
 
 .reviews p {
@@ -825,6 +831,14 @@ section.shipping::before {
 .review-item img {
   max-width: 50%;
   height: auto;
+}
+
+.wrapper.flex {
+  justify-content: space-between;
+}
+
+.indicator {
+  display: none;
 }
 
 /**********************/
@@ -1428,22 +1442,22 @@ section.shipping::before {
     padding: 0 10rem;
   }
 
-  .reviews .grid {
-    display: block;
+  .wrapper.flex {
+    /* flex-direction: column; */
   }
 
   .review-item.card {
-    width: 60%;
+    width: 30%;
     margin: 3rem auto;
   }
 
   .review-item img {
-    width: 100%;
+    width: 40%;
     height: auto;
   }
 
-  .reviews h3 {
-    font-size: 2rem;
+  .reviews h5 {
+    font-size: 3rem;
     padding: 2rem;
   }
 
@@ -1453,9 +1467,38 @@ section.shipping::before {
   }
 
   .reviews p {
-    font-size: 1.6rem;
+    font-size: 2rem;
     padding: 2rem;
     line-height: 2.6rem;
+  }
+
+  .wrapper {
+    width: 300%;
+    min-height: 100%;
+    transition: 1s;
+  }
+
+  .indicator {
+    display: inline-block;
+  }
+
+  .indicator button {
+    background: var(--header-text-color);
+    border: none;
+    outline: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 2px solid var(--header-text-color);
+    cursor: pointer;
+    margin-left: 5px;
+    transition: 0.5s;
+  }
+
+  .indicator .active-btn{
+    width: 4rem;
+    border-radius: 50px;
+    background-color: var(--header-text-color);
   }
 
   /**********************/
@@ -1714,142 +1757,6 @@ section.shipping::before {
     font-size: 1.9rem;
   }
 
-  /**********************/
-  /* REVIEWS */
-  /**********************/
-
-  .reviews h2 {
-    padding: 0 10rem;
-  }
-
-  .reviews .grid {
-    display: block;
-  }
-
-  .review-item.card {
-    width: 60%;
-    margin: 3rem auto;
-  }
-
-  .review-item img {
-    width: 100%;
-    height: auto;
-  }
-
-  .reviews h3 {
-    font-size: 2rem;
-    padding: 2rem;
-  }
-
-  .checked {
-    font-size: 2.2rem;
-    margin: 0 1rem;
-  }
-
-  .reviews p {
-    font-size: 1.6rem;
-    padding: 2rem;
-    line-height: 2.6rem;
-  }
-
-  /**********************/
-  /* FAQ */
-  /**********************/
-
-  .accordion {
-    font-size: 2.4rem;
-  }
-
-  .accordion div div i {
-    font-size: 2.5rem;
-  }
-
-  .panel {
-    font-size: 1.8rem;
-    line-height: 3rem;
-    padding: 3rem 8rem;
-  }
-
-  /**********************/
-  /* BANNER TIMER */
-  /**********************/
-
-  .banner-bg-image {
-    background-image: url("../assets/banner-timer-tablet.png");
-    max-width: 100rem;
-    height: 65rem;
-  }
-
-  .banner-timer h2 {
-    padding: 6rem 8rem 2rem;
-    letter-spacing: 0.5px;
-    line-height: 5rem;
-  }
-
-  .banner-timer p {
-    font-size: 2.4rem;
-    padding: 3rem;
-    line-height: 3rem;
-  }
-
-  #timer {
-    font-size: 5rem;
-    padding-top: 4rem;
-  }
-
-  .banner-timer .timer-text p {
-    padding: 2rem 1rem;
-    font-size: 1.5rem;
-  }
-
-  /**********************/
-  /* CERTIFIKATI */
-  /**********************/
-
-  .certificates .grid {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 5rem;
-  }
-
-  /**********************/
-  /* FOOTER */
-  /**********************/
-
-  .footer-divider-1 {
-    max-width: 100rem;
-    height: 10.5rem;
-  }
-
-  .footer-divider-2 {
-    max-width: 100rem;
-    height: 21rem;
-  }
-
-  .footer-menu.grid {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .footer-menu li {
-    font-size: 1.5rem;
-  }
-
-  .footer-menu i {
-    font-size: 2.5rem;
-  }
-
-  .footer-phone {
-    font-size: 1.5rem;
-  }
-
-  .footer-mail-section p {
-    font-size: 1.5rem;
-  }
-
-  .copyright {
-    margin-top: -1rem;
-  }
-}
 
 /*//////////////*/
 /* ISPOD 600 PX */
