@@ -819,6 +819,10 @@ section.shipping::before {
   height: 40rem;
   margin-right: 3rem;
   padding-block: 2rem;
+  background: none;
+  border-radius: 1px solid #fff;
+  background-color: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px) saturate(100%) brightness(130%);
 }
 
 .review-item.card .flex{
@@ -834,7 +838,8 @@ section.shipping::before {
   padding: 2rem 0 1rem 0;
   font-weight: 600;
   font-size: 1.4rem;
-  color: var(--primary-text-color);
+  /* color: var(--primary-text-color); */
+  color: var(--white-text-color);
   text-align: center;
   line-height: 2rem;
 }
