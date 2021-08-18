@@ -186,6 +186,24 @@ img {
   }
 }
 
+@keyframes circle-moving-left{
+  0%,100%{
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes circle-moving-right{
+  0%,100%{
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(50%);
+  }
+}
+
 /**********************/
 /* NAVBAR */
 /**********************/
@@ -810,8 +828,36 @@ section.shipping::before {
 }
 
 .reviews-wrapper{
+  position: relative;
+}
+
+.circle-1{
+  background-color: #7EC4FF;
+  width: 40rem;
+  height: 40rem;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  top: 5%;
+  animation: circle-moving-right 5s linear infinite;
+}
+.circle-2{
+  background-color: #7EC4FF;
+  width: 40rem;
+  height: 40rem;
+  border-radius: 50%;
+  position: absolute;
+  right: 0;
+  bottom: 5%;
+  animation: circle-moving-left 5s linear infinite;
+}
+
+.reviews-wrapper{
   padding: 5rem;
-  background: radial-gradient( circle, rgba(54, 64, 79, 1) 0%, rgba(14, 21, 31, 1) 100% );
+  background: linear-gradient( 
+420deg
+, rgba(159, 201, 237, 1) 0%, rgba(255, 255, 255, 1) 100% );
+  /* background: radial-gradient( circle, rgba(54, 64, 79, 1) 0%, rgba(14, 21, 31, 1) 100% ); */
 }
 
 .review-item.card {
@@ -838,8 +884,8 @@ section.shipping::before {
   padding: 2rem 0 1rem 0;
   font-weight: 600;
   font-size: 1.4rem;
-  /* color: var(--primary-text-color); */
-  color: var(--white-text-color);
+  color: var(--dark-text-color);
+  /* color: var(--white-text-color); */
   text-align: center;
   line-height: 2rem;
 }
@@ -1500,13 +1546,13 @@ section.shipping::before {
   }
 
   .indicator button {
-    background: var(--white-text-color);
+    background: var(--header-text-color);
     border: none;
     outline: none;
     width: 15px;
     height: 15px;
     border-radius: 50%;
-    border: 2px solid var(--white-text-color);
+    border: 2px solid var(--header-text-color);
     cursor: pointer;
     margin-left: 5px;
     transition: 0.5s;
@@ -1515,7 +1561,7 @@ section.shipping::before {
   .indicator .active-btn{
     width: 4rem;
     border-radius: 50px;
-    background-color: var(--white-text-color);
+    background-color: var(--header-text-color);
   }
 
   /**********************/
