@@ -1224,7 +1224,7 @@ span b {
 
 .message-animation {
   z-index: 2;
-  animation: winner 2s ease-in;
+  animation: winner 0.7s linear;
 }
 
 @keyframes winner {
@@ -1232,11 +1232,15 @@ span b {
     transform: scale(0);
     top: 0;
     left: 0;
+    opacity: 0;
   }
-  50% {
-    transform: scale(1);
-    top: 50%;
-    left: 50%;
+  35% {
+    transform: scale(0.35);
+    /* top: 50%;
+    left: 50%; */
+    top: 0;
+    left: 0;
+    opacity: 0.5;
   }
 }
 
