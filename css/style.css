@@ -1076,6 +1076,144 @@ section.shipping::before {
 .copyrighttxt {
     color: var(--white-text-color);
 }
+
+/**********************/
+/* SPINNING WHEEL */
+/**********************/
+
+.mainbox {
+    position: relative;
+    width: 50rem;
+    height: 50rem;
+    margin: 0 auto;
+}
+
+.mainbox::before {
+    content: '';
+    position: absolute;
+    width: 3.2rem;
+    height: 3.2rem;
+    background: url('https://learndesigntutorial.com/wp-content/uploads/2021/03/arrow-left.png')
+        no-repeat;
+    background-size: 3.2rem;
+    top: 50%;
+    right: -3rem;
+    transform: translateY(-50%);
+}
+
+.box {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    border: 10px solid #333;
+    border-radius: 50%;
+    overflow: hidden;
+    transition: transform cubic-bezier(0.25, 0.1, 0.25, 1) 8s;
+}
+
+.box span {
+    width: 50%;
+    height: 50%;
+    display: inline-block;
+    position: absolute;
+}
+
+.span1 {
+    top: 12rem;
+    left: 0;
+    background-color: #ffeb3b;
+    clip-path: polygon(0 92%, 100% 50%, 0 8%);
+}
+
+.span2 {
+    top: 12rem;
+    right: 0;
+    background-color: #e91e63;
+    clip-path: polygon(100% 92%, 0 50%, 100% 8%);
+}
+
+.span3 {
+    bottom: 0;
+    left: 12rem;
+    background-color: #4caf50;
+    clip-path: polygon(50% 0, 8% 100%, 92% 100%);
+}
+.span4 {
+    top: 0;
+    left: 12rem;
+    background-color: #3f51b5;
+    clip-path: polygon(50% 100%, 92% 0, 8% 0);
+}
+
+.box1 .span3 b {
+    transform: translate(-50%, -50%) rotate(-270deg);
+}
+
+.box1 .span1 b,
+.box2 .span1 b {
+    transform: translate(-50%, -50%) rotate(185deg);
+}
+.box2 .span3 b {
+    transform: translate(-50%, -50%) rotate(90deg);
+}
+.box1 .span4 b,
+.box2 .span4 b {
+    transform: translate(-50%, -50%) rotate(-85deg);
+}
+
+.box2 {
+    width: 100%;
+    height: 100%;
+    transform: rotate(-135deg);
+}
+
+span b {
+    width: 7rem;
+    height: 7rem;
+    line-height: 6.5rem;
+    border-radius: 50%;
+    font-size: 2.6rem;
+    text-align: center;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: inset 0 3px 3px 0 #717171;
+}
+
+.spin {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 7.5rem;
+    height: 7.5rem;
+    border-radius: 50%;
+    border: 0.4rem solid white;
+    background-color: #ff5722;
+    color: #fff;
+    box-shadow: 0 5px 20px #000;
+    font-weight: bold;
+    font-size: 1.6rem;
+    cursor: pointer;
+}
+
+.spin:active {
+    width: 7rem;
+    height: 7rem;
+    font-size: 1.2rem;
+}
+
+.mainbox.animate::before {
+    animation: animateArrow 0.7s ease infinite;
+}
+@keyframes animateArrow {
+    50% {
+        right: -4rem;
+    }
+}
+
 /*//////////////*/
 /* ISPOD 1024 PX */
 /*//////////////*/
@@ -1672,6 +1810,19 @@ section.shipping::before {
         font-size: 2rem;
         padding: 3rem 6rem;
     }
+
+    /**********************/
+    /* SPINNING WHEEL */
+    /* <768 PX */
+    /**********************/
+
+    .span1 {
+        top: 11.8rem;
+    }
+
+    .span3 {
+        left: 11.8rem;
+    }
 }
 
 /*//////////////*/
@@ -2182,6 +2333,19 @@ section.shipping::before {
     .copyrighttxt {
         font-size: 2.8rem;
         padding: 3rem;
+    }
+
+    /**********************/
+    /* SPINNING WHEEL */
+    /* <426 PX */
+    /**********************/
+
+    .span2 {
+        top: 11.3rem;
+    }
+
+    .span4 {
+        left: 11.4rem;
     }
 }
 
