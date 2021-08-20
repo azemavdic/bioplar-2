@@ -1094,6 +1094,7 @@ section.shipping::before {
   position: absolute;
   width: 3.2rem;
   height: 3.2rem;
+  color: rgb(80, 76, 76);
   background: url("https://learndesigntutorial.com/wp-content/uploads/2021/03/arrow-left.png")
     no-repeat;
   background-size: 3.2rem;
@@ -1106,7 +1107,8 @@ section.shipping::before {
   width: 100%;
   height: 100%;
   position: relative;
-  border: 10px solid #333;
+  border: 10px solid rgb(80, 76, 76);
+  box-shadow: inset 0 10px 5px rgba(0, 0, 0, 0.9);
   border-radius: 50%;
   overflow: hidden;
   transition: transform cubic-bezier(0.25, 0.1, 0.25, 1) 8s;
@@ -1214,8 +1216,8 @@ span b {
   left: 50%;
   transform: translate(-50%, -50%);
   background: var(--white-text-color);
-  width: 70%;
-  height: 70%;
+  width: 80%;
+  height: 80%;
   z-index: -1;
   padding: 3rem 1rem;
 }
@@ -1239,7 +1241,7 @@ span b {
 }
 
 .message p {
-  font-weight: bold;
+  /* font-weight: bold; */
   color: var(--primary-color);
   font-size: 4rem;
   line-height: 4rem;
@@ -1928,6 +1930,14 @@ span b {
   }
 
   /**********************/
+  /* SPINNING WHEEL */
+  /* ISPOD 600 PX */
+  /**********************/
+  .span2 {
+    top: 11.85rem;
+  }
+
+  /**********************/
   /* FOOTER */
   /* ISPOD 600 PX */
   /**********************/
@@ -1963,6 +1973,31 @@ span b {
 
   .symp-items.grid {
     gap: 1rem;
+  }
+
+  /**********************/
+  /* SPINNING WHEEL */
+  /* ISPOD 500 PX */
+  /**********************/
+
+  .box {
+    border: 6px solid rgb(80, 76, 76);
+  }
+
+  .span1 {
+    top: 12.4rem;
+  }
+
+  .span2 {
+    top: 11.4rem;
+  }
+
+  .span3 {
+    left: 12.4rem;
+  }
+
+  .span4 {
+    left: 11.4rem;
   }
 
   /*//////////////*/
@@ -2445,6 +2480,18 @@ span b {
 @media (max-width: 320px) {
   html {
     font-size: 25%;
+  }
+
+  /**********************/
+  /* SPINNING WHEEL */
+  /* ISPOD 320 PX */
+  /**********************/
+  .span2 {
+    top: 10.8rem;
+  }
+
+  .span4 {
+    left: 10.9rem;
   }
 }
 
