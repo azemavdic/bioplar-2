@@ -1,107 +1,107 @@
 //ACCORDION
 
-var acc = document.getElementsByClassName('accordion');
+var acc = document.getElementsByClassName("accordion");
 var i;
 
 for (i = 0; i < acc.length; i++) {
-    acc[i].addEventListener('click', function () {
-        this.classList.toggle('active');
+  acc[i].addEventListener("click", function () {
+    this.classList.toggle("active");
 
-        var icon = this.childNodes[1].childNodes[3];
-        icon.classList.toggle('rotate-icon');
+    var icon = this.childNodes[1].childNodes[3];
+    icon.classList.toggle("rotate-icon");
 
-        // console.log(this.childNodes[1].childNodes[3]);
+    // console.log(this.childNodes[1].childNodes[3]);
 
-        var panel = this.nextElementSibling;
-        if (panel.style.display === 'block') {
-            panel.style.display = 'none';
-        } else {
-            panel.style.display = 'block';
-        }
-    });
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
 }
 
 //COUNTDOWN TIMER
 
 let sec = 1800;
-let count = document.getElementById('timer');
-let text = document.getElementById('text-timer');
+let count = document.getElementById("timer");
+let text = document.getElementById("text-timer");
 let secPass;
 let countDown = setInterval(() => {
-    'use strict';
-    secpass();
+  "use strict";
+  secpass();
 }, 1000);
 
 function secpass() {
-    'use strict';
+  "use strict";
 
-    let min = Math.floor(sec / 60),
-        remSec = sec % 60;
+  let min = Math.floor(sec / 60),
+    remSec = sec % 60;
 
-    if (remSec < 10) {
-        remSec = '0' + remSec;
-    }
-    if (min < 10) {
-        min = '0' + min;
-    }
-    count.innerHTML = min + ':' + remSec;
+  if (remSec < 10) {
+    remSec = "0" + remSec;
+  }
+  if (min < 10) {
+    min = "0" + min;
+  }
+  count.innerHTML = min + ":" + remSec;
 
-    if (sec > 0) {
-        sec = sec - 1;
-    } else {
-        clearInterval(countDown);
+  if (sec > 0) {
+    sec = sec - 1;
+  } else {
+    clearInterval(countDown);
 
-        count.innerHTML = 'AKCIJA ZAVRŠILA';
-        text.style.display = 'none';
-    }
+    count.innerHTML = "AKCIJA ZAVRŠILA";
+    text.style.display = "none";
+  }
 }
 
 // SMOOTH SCROLL
 $(document).ready(function () {
-    $('a').on('click', function (event) {
-        if (this.hash !== '') {
-            event.preventDefault();
+  $("a").on("click", function (event) {
+    if (this.hash !== "") {
+      event.preventDefault();
 
-            var hash = this.hash;
+      var hash = this.hash;
 
-            $('html, body').animate(
-                {
-                    scrollTop: $(hash).offset().top,
-                },
-                800,
-                function () {
-                    window.location.hash = hash;
-                }
-            );
+      $("html, body").animate(
+        {
+          scrollTop: $(hash).offset().top,
+        },
+        800,
+        function () {
+          window.location.hash = hash;
         }
-    });
+      );
+    }
+  });
 });
 
 // POTVRDA PLAĆANJA
 
-let formTitle = document.querySelector('#title-form');
+let formTitle = document.querySelector("#title-form");
 
 function submitHandler() {
-    document.querySelector('#title-form').innerText = '';
-    return false;
+  document.querySelector("#title-form").innerText = "";
+  return false;
 }
 
 // MOBILNA NAVIGACIJA
 
-const mobileMenuIcon = document.querySelector('.btn-mobile-nav');
+const mobileMenuIcon = document.querySelector(".btn-mobile-nav");
 
-const navbar = document.querySelector('.navbar');
+const navbar = document.querySelector(".navbar");
 
-const navbarItem = document.getElementsByClassName('nav-item');
+const navbarItem = document.getElementsByClassName("nav-item");
 
-mobileMenuIcon.addEventListener('click', function () {
-    navbar.classList.toggle('nav-open');
+mobileMenuIcon.addEventListener("click", function () {
+  navbar.classList.toggle("nav-open");
 });
 
 for (i = 0; i < navbarItem.length; i++) {
-    navbarItem[i].addEventListener('click', function () {
-        navbar.classList.remove('nav-open');
-    });
+  navbarItem[i].addEventListener("click", function () {
+    navbar.classList.remove("nav-open");
+  });
 }
 
 // COUNTER SECTION INCREMENT
@@ -130,40 +130,42 @@ for (i = 0; i < navbarItem.length; i++) {
 
 // TESTIMONIAL SLIDER
 
-const wrapper = document.querySelector('.wrapper');
-const indicators = document.querySelectorAll('.indicator button');
+const wrapper = document.querySelector(".wrapper");
+const indicators = document.querySelectorAll(".indicator button");
 
 let currentTestimonial = 0;
 
 indicators.forEach((item, i) => {
-    item.addEventListener('click', () => {
-        indicators[currentTestimonial].classList.remove('active-btn');
-        wrapper.style.marginLeft = `-${100 * i}%`;
-        item.classList.add('active-btn');
-        currentTestimonial = i;
-    });
+  item.addEventListener("click", () => {
+    indicators[currentTestimonial].classList.remove("active-btn");
+    wrapper.style.marginLeft = `-${100 * i}%`;
+    item.classList.add("active-btn");
+    currentTestimonial = i;
+  });
 });
 
 // SPINNIG WHEEL
 
 function spinWheel() {
-    const box = document.querySelector('#box');
-    const mainbox = document.querySelector('#mainbox');
+  const box = document.querySelector("#box");
+  const mainbox = document.querySelector("#mainbox");
+  const message = document.querySelector("#message");
 
-    const x = 1024;
-    const y = 5000;
+  const x = 1024;
+  const y = 5000;
 
-    const deg = Math.floor(Math.random() * (x - y) + y);
+  const deg = Math.floor(Math.random() * (x - y) + y);
 
-    // box.style.transform = 'rotate(' + deg + 'deg)';
+  // box.style.transform = 'rotate(' + deg + 'deg)';
 
-    box.style.transform = 'rotate(9270deg)';
+  box.style.transform = "rotate(9270deg)";
 
-    // mainbox.classList.remove('animate');
-    mainbox.classList.add('animate');
-    setTimeout(function () {
-        var valueList = ['10', '20', '50', '100', '150', '200', '400', '500'];
-        var getValue = valueList[Math.floor(Math.random() * valueList.length)];
-        // alert(getValue);
-    }, 8000);
+  // mainbox.classList.remove('animate');
+  mainbox.classList.add("animate");
+  setTimeout(function () {
+    var valueList = ["10", "20", "50", "100", "150", "200", "400", "500"];
+    var getValue = valueList[Math.floor(Math.random() * valueList.length)];
+    // alert(getValue);
+    message.classList.add("message-animation");
+  }, 8100);
 }
