@@ -1122,27 +1122,29 @@ section.shipping::before {
 .span1 {
   top: 12rem;
   left: 0;
-  background-color: #ffeb3b;
+  background-color: #7fa1be;
+
   clip-path: polygon(0 92%, 100% 50%, 0 8%);
 }
 
 .span2 {
   top: 12rem;
   right: 0;
-  background-color: #e91e63;
+  background-color: #9fc9ed;
   clip-path: polygon(100% 92%, 0 50%, 100% 8%);
 }
 
 .span3 {
   bottom: 0;
   left: 12rem;
-  background-color: #4caf50;
+  background-color: #6f8da6;
+
   clip-path: polygon(50% 0, 8% 100%, 92% 100%);
 }
 .span4 {
   top: 0;
   left: 12rem;
-  background-color: #3f51b5;
+  background-color: #b2d4f1;
   clip-path: polygon(50% 100%, 92% 0, 8% 0);
 }
 
