@@ -1156,7 +1156,7 @@ section.shipping::before {
 
 .box1 .span1 b,
 .box2 .span1 b {
-  transform: translate(-50%, -50%) rotate(185deg);
+  transform: translate(-50%, -50%) rotate(180deg);
 }
 .box2 .span3 b {
   transform: translate(-50%, -50%) rotate(90deg);
@@ -1173,18 +1173,19 @@ section.shipping::before {
 }
 
 span b {
-  width: 7rem;
-  height: 7rem;
+  width: 100%;
+  /* height: 7rem; */
   line-height: 6.5rem;
-  border-radius: 50%;
-  font-size: 2.6rem;
+  /* border-radius: 50%; */
+  font-size: 2rem;
   text-align: center;
-  background-color: white;
+  color: var(--white-text-color);
+  /* background-color: white; */
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  box-shadow: inset 0 3px 3px 0 #717171;
+  /* box-shadow: inset 0 3px 3px 0 #717171; */
 }
 
 .spin {
@@ -1215,15 +1216,17 @@ span b {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background: var(--white-text-color);
+  background: var(--header-text-color);
   width: 80%;
   height: 80%;
   z-index: -1;
   padding: 3rem 1rem;
+  opacity: 0;
 }
 
 .message-animation {
   z-index: 2;
+  opacity: 1;
   animation: winner 0.7s linear;
 }
 
@@ -1240,13 +1243,16 @@ span b {
     left: 50%; */
     top: 0;
     left: 0;
-    opacity: 0.5;
+    opacity: 1;
   }
+  /* 100% {
+    opacity: 1;
+  } */
 }
 
 .message p {
   /* font-weight: bold; */
-  color: var(--primary-color);
+  color: var(--white-text-color);
   font-size: 4rem;
   line-height: 4rem;
   margin-bottom: 3rem;
@@ -1259,6 +1265,19 @@ span b {
   50% {
     right: -4rem;
   }
+}
+
+.fireworks {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  width: 90%;
+}
+
+.display {
+  z-index: 55;
 }
 
 /*//////////////*/
@@ -1864,7 +1883,7 @@ span b {
   /**********************/
 
   .span1 {
-    top: 11.8rem;
+    top: 11.7rem;
   }
 
   .span3 {
@@ -1941,6 +1960,10 @@ span b {
     top: 11.85rem;
   }
 
+  .span4 {
+    left: 11.9rem;
+  }
+
   /**********************/
   /* FOOTER */
   /* ISPOD 600 PX */
@@ -1989,7 +2012,7 @@ span b {
   }
 
   .span1 {
-    top: 12.4rem;
+    top: 12.5rem;
   }
 
   .span2 {

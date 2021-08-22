@@ -150,6 +150,7 @@ function spinWheel() {
   const box = document.querySelector("#box");
   const mainbox = document.querySelector("#mainbox");
   const message = document.querySelector("#message");
+  const fireworks = document.querySelector(".fireworks");
 
   const x = 1024;
   const y = 5000;
@@ -167,5 +168,10 @@ function spinWheel() {
     var getValue = valueList[Math.floor(Math.random() * valueList.length)];
     // alert(getValue);
     message.classList.add("message-animation");
+    fireworks.classList.add("display");
   }, 8100);
+
+  setTimeout(function () {
+    fireworks.classList.remove("display");
+  }, 11200);
 }
