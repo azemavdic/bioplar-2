@@ -1104,7 +1104,7 @@ section.shipping::before {
 .cont {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 
 .image i {
@@ -1732,6 +1732,34 @@ section.shipping::before {
     font-size: 2rem;
     padding: 3rem 6rem;
   }
+
+  /**********************/
+  /* BUYERS */
+  /* <768 PX */
+  /**********************/
+
+  .buyers {
+    width: 50%;
+  }
+
+  .name {
+    font-size: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+  }
+
+  .name span {
+    font-size: 2rem;
+  }
+
+  .desc {
+    font-size: 1.8rem;
+    padding-bottom: 1rem;
+  }
+
+  .buyers-box small {
+    font-size: 1.4rem;
+  }
 }
 
 /*//////////////*/
@@ -1840,6 +1868,15 @@ section.shipping::before {
   .footer-divider-2 {
     height: 22rem;
     max-width: none;
+  }
+
+  /**********************/
+  /* BUYERS */
+  /* <500 PX */
+  /**********************/
+
+  .image i {
+    margin-right: 2rem;
   }
 }
 
@@ -2241,6 +2278,15 @@ section.shipping::before {
   .copyrighttxt {
     font-size: 2.8rem;
     padding: 3rem;
+  }
+
+  /**********************/
+  /* BUYERS */
+  /* <426 PX */
+  /**********************/
+
+  .buyers {
+    width: 60%;
   }
 }
 
