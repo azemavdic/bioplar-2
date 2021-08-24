@@ -256,6 +256,12 @@ setInterval(function () {
   } Natura Active</div>
                 <small>${timeAgo[ind]}</small>
                 </div>
+                <div class="image">
+                            <img
+            src="assets/hero-image-removebg-preview.png"
+            alt=""
+          />
+                        </div>
             </div>`;
 
   if (ind < len) {
