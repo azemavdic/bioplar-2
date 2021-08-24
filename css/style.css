@@ -2286,7 +2286,25 @@ section.shipping::before {
   /**********************/
 
   .buyers {
-    width: 50%;
+    width: 60%;
+  }
+
+  .name {
+    font-size: 2.6rem;
+  }
+
+  .name span {
+    font-size: 2.6rem;
+  }
+
+  .desc {
+    font-size: 2.2rem;
+    padding-top: 1rem;
+    padding-bottom: 0.8rem;
+  }
+
+  .buyers-box small {
+    font-size: 1.8rem;
   }
 }
 
