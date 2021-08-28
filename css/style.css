@@ -1157,8 +1157,8 @@ section.shipping::before {
 }
 
 .back a {
-  width: 8rem;
-  padding: 2.5rem 2rem;
+  width: 7rem;
+  padding: 2rem 1.8rem;
   display: flex;
   justify-content: center;
   align-items: center;
