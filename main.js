@@ -135,6 +135,67 @@ const indicators = document.querySelectorAll(".indicator button");
 
 let currentTestimonial = 0;
 
+const cards = Array.from(document.querySelectorAll(".review-item.card"));
+
+let isDragging = false;
+let startPos = 0;
+let currentTranslate = 0;
+let prevTranslate = 0;
+let animationId = 0;
+
+cards.forEach((card, index) => {
+  //Touch
+  card.addEventListener("touchstart", touchStart(index));
+  card.addEventListener("touchend", touchEnd);
+  card.addEventListener("touchmove", touchMove);
+});
+
+function touchStart(index) {
+  return function (event) {
+    startPos = event.touches[0].clientX;
+    isDragging = true;
+    animationId = requestAnimationFrame(animation);
+  };
+}
+
+function animation() {
+  wrapper.style.marginLeft = `-${100 * currentTestimonial}%`;
+
+  if (isDragging) requestAnimationFrame(animation);
+}
+
+function touchEnd() {
+  isDragging = false;
+  cancelAnimationFrame(animationId);
+
+  const movedBy = currentTranslate - prevTranslate;
+  if (movedBy < -100 && currentTestimonial < cards.length - 1) {
+    currentTestimonial += 1;
+    indicators[currentTestimonial - 1].classList.remove("active-btn");
+    indicators[currentTestimonial].classList.add("active-btn");
+  }
+  if (movedBy > 100 && currentTestimonial > 0) {
+    currentTestimonial -= 1;
+    indicators[currentTestimonial + 1].classList.remove("active-btn");
+    indicators[currentTestimonial].classList.add("active-btn");
+  }
+  setPositionByIndex();
+}
+
+function touchMove(event) {
+  if (isDragging) {
+    const currentPosition = event.touches[0].clientX;
+    currentTranslate = prevTranslate + currentPosition - startPos;
+  }
+}
+
+function setPositionByIndex() {
+  currentTranslate = currentTestimonial * -window.innerWidth;
+  prevTranslate = currentTranslate;
+
+  wrapper.style.marginLeft = `-${100 * currentTestimonial}%`;
+}
+
 indicators.forEach((item, i) => {
   item.addEventListener("click", () => {
     indicators[currentTestimonial].classList.remove("active-btn");
@@ -269,7 +330,6 @@ setInterval(function () {
   } else {
     ind = 1;
   }
-  console.log(ind);
 }, 8000);
 
 setInterval(function () {
