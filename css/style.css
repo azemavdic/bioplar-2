@@ -320,6 +320,7 @@ img {
 
 .hero-text {
   align-self: center;
+  animation: left-to-center 1s;
 }
 
 .hero-text::before {
@@ -374,6 +375,7 @@ img {
   max-width: 50rem;
   /* justify-self: flex-end; */
   z-index: 1;
+  animation: right-to-center 1s;
 }
 
 .sale-icon {
@@ -1330,7 +1332,7 @@ section.shipping::before {
   .hero-image {
     justify-self: center;
     left: 0;
-    animation: top-to-center 1s;
+    animation: bottom-to-center 1s;
     margin-bottom: 5rem;
   }
 
@@ -1351,7 +1353,7 @@ section.shipping::before {
 
   .hero-text {
     width: 100%;
-    animation: bottom-to-center 1s;
+    animation: top-to-center 1s;
   }
 
   .hero-text::before {
