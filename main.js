@@ -169,12 +169,12 @@ function touchEnd() {
   cancelAnimationFrame(animationId);
 
   const movedBy = currentTranslate - prevTranslate;
-  if (movedBy < -100 && currentTestimonial < cards.length - 1) {
+  if (movedBy < -20 && currentTestimonial < cards.length - 1) {
     currentTestimonial += 1;
     indicators[currentTestimonial - 1].classList.remove("active-btn");
     indicators[currentTestimonial].classList.add("active-btn");
   }
-  if (movedBy > 100 && currentTestimonial > 0) {
+  if (movedBy > 20 && currentTestimonial > 0) {
     currentTestimonial -= 1;
     indicators[currentTestimonial + 1].classList.remove("active-btn");
     indicators[currentTestimonial].classList.add("active-btn");
